@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula_c
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] vetorX = new double[5];
+            double[] vetorY = new double[5];
+            double[] vetorZ = new double[5];
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Informe o valor do vetor[" + (i + 1) + "]");
+                vetorX[i] = double.Parse(Console.ReadLine());
+                vetorY[i] = vetorX[i] * 10;
+                vetorZ[i] = vetorY[i] / vetorX[i];
+            }
+            //Mostrando o Vetor X
+            Console.WriteLine("Vetor X: ");
+            foreach (double valorX in vetorX)
+            {
+                Console.WriteLine("valorX");
+            }
+
+            //Mostrando o Vetor Y
+            Console.WriteLine("Vetor Y: ");
+            foreach (double valorY in vetorY)
+            {
+                Console.WriteLine("valorY");
+            }
+
+            //Mostrando o vetor Z
+            Console.WriteLine("Vetor Z: ");
+            foreach (double valorZ in vetorZ)
+            {
+                Console.WriteLine("Vetor Z");
+            }
+            Console.ReadKey();
+        }
+    }
+}
